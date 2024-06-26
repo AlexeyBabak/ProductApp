@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ProductApp.Shared.Abstract;
 
 namespace ProductApp.Data;
 
@@ -13,7 +14,7 @@ public enum ProductState
     NotAvailable
 }
 
-public class Product : IProductEntity
+public class Product : IEntity
 {
     [Key]
     public Guid Id { get; set; }
