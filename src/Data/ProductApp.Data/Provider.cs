@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ProductApp.Shared.Abstract;
 
 namespace ProductApp.Data;
 
-public class Provider : IProductEntity
+public class Provider : IEntity
 {
     [Key]
     public Guid Id { get; set; }
