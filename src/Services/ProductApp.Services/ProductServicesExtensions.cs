@@ -9,6 +9,7 @@ namespace ProductApp.Services
         public static IServiceCollection AddProductServices(this IServiceCollection services)
         {
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IUserService, UserService>();
             return services;
         }
     }
